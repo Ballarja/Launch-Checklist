@@ -16,9 +16,9 @@ window.addEventListener("load", function() {
        || validateInput(fuelInput) === "Empty" || validateInput(cargoInput) === "Empty"){
             alert("All Fields Are Required!!");
        }
-       if(validateInput(pilotInput) === "Is a Number" || validateInput(copilotInput) === "Is a Number" 
+       else if(validateInput(pilotInput) === "Is a Number" || validateInput(copilotInput) === "Is a Number" 
        || validateInput(fuelInput) === "Not a Number" || validateInput(cargoInput) === "Not a Number"){
-            alert("All Fields Are Required!!");
+            alert("Make Sure You Enter Valid Information for each field!!");
        }
        event.preventDefault();
        //console.log(formSubmission);
